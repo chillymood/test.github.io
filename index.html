@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      iframe {
+      /* iframe {
         width: 30px !important;
         height: 30px !important;
-      }
-      .plugin > svg {
-        width: 30px !important;
-        height: 30px !important;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -44,6 +40,8 @@
         js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
+
+      // $("iframe").contents().find("element-selector").css("border-color", "blue");
     </script>
   </body>
 </html>

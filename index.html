@@ -43,7 +43,6 @@
       loadJS("yourcode.js", yourCodeToBeCalled, document.body);
     </script>
     <script>
-      loadFB();
       const loadFB = () => {
         var chatbox = document.getElementById("fb-customer-chat");
         chatbox.setAttribute("page_id", "129559535958227");
@@ -68,6 +67,7 @@
         })(document, "script", "facebook-jssdk");
       };
 
+      loadFB();
       // $("iframe").contents().find("element-selector").css("border-color", "blue");
     </script>
   </body>

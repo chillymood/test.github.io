@@ -28,59 +28,7 @@
     </style>
   </head>
   <body>
-    <!-- <!-- Messenger 洽談外掛程式 Code -->
-    <div class="test"></div>
-    <div id="fb-root"></div>
-
-    <!-- Your 洽談外掛程式 code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var loadJS = function (url, implementationCode, location) {
-        //url is URL of external file, implementationCode is the code
-        //to be called from the file, location is the location to
-        //insert the <script> element
-
-        var scriptTag = document.createElement("script");
-        scriptTag.src = url;
-
-        scriptTag.onload = implementationCode;
-        scriptTag.onreadystatechange = implementationCode;
-
-        location.appendChild(scriptTag);
-      };
-      var yourCodeToBeCalled = function () {
-        //your code goes here
-      };
-      loadJS("yourcode.js", yourCodeToBeCalled, document.body);
-    </script>
-    <script>
-      const loadFB = () => {
-        var chatbox = document.getElementById("fb-customer-chat");
-        chatbox.setAttribute("page_id", "129559535958227");
-        chatbox.setAttribute("attribution", "biz_inbox");
-
-        window.fbAsyncInit = function () {
-          FB.init({
-            xfbml: true,
-            version: "v11.0",
-          });
-        };
-
-        (function (d, s, id) {
-          var js,
-            fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s);
-          js.id = id;
-          js.src =
-            "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        })(document, "script", "facebook-jssdk");
-      };
-
-      loadFB();
-      // $("iframe").contents().find("element-selector").css("border-color", "blue");
-    </script>
+    <img src="./icon-next.svg" alt="">
+    <img src="./left-arrow.svg" alt="">
   </body>
 </html>
